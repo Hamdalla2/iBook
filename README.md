@@ -23,7 +23,7 @@
 - browse the categories grid section ✔️
 - readme file ✔️
 - html semantics ✔️
-- pixel perfect design ✔️
+- follow the design ✔️
 - mobile first ✔️
 - seo practices ✔️
 - high performance solution ✔️
@@ -39,4 +39,7 @@
 - responsive carousels functionality ✔️
 
 - highlight currently selected header and footer navigation ❌
+- smooth scrolling account for header height ❌
+- fix carousel on switching screen width ❌
+- pixel perfect ❌
 - adding tests ❌
