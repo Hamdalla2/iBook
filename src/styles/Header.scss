@@ -1,0 +1,72 @@
+@import "./_mixins.scss";
+@import "./_variables.scss";
+
+.header {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: $white;
+    position: fixed;
+    background-color: $green;
+    @include size(100%, 7vh);
+    @include respond(height, 5vh, 7vh);
+}
+
+.header-logo {
+    color: $white;
+    @include absolute(50%, 20%);
+    @include respond(left, 20%, 10%);                
+    .header-logo-book, .header-logo-reviews {
+        font-size: 2vh;
+        @include respond(font-size, 2vh, 3vh);
+    }
+}
+
+.navbar {
+    @include size(50vw);
+    @include absolute(50%, 70%);
+    .navbar-main-menu {
+        list-style: none;
+        text-transform: uppercase;
+        @include flex(center, space-around);
+        .navbar-main-item {
+            padding-left: 5px;
+            &, a, i {
+                color: $white;
+                font-size: 1vh;
+                line-height: 1vh;
+                font-weight: bold;
+                text-align: center;
+                @include respond(font-size, 1vh, 2vh);
+                @include respond(line-height, 1vh, 2vh);
+                &:hover {
+                    color: $grey;
+                }
+                &:focus {
+                    color: $black;
+                }
+            }
+        }
+    }
+   .navbar-sub-menu {
+       position: fixed;
+       list-style: none;
+       text-transform: none;
+       transform: translate(-25%);
+       @include respond(transform, translate(-25%, 10%));
+       @include flex(center, center, column nowrap);
+       .navbar-sub-item {
+            padding-top: 1.5vh;
+            a {
+               color: $black;
+               padding: 0.5vh;
+               border-radius: 33px;
+               border: 1px solid $gray;
+               background-color: $green;
+            }
+            a:hover { 
+               background-color: $green-dark;
+            }
+        }
+   }
+}

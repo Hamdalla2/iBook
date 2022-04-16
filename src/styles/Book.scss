@@ -1,0 +1,31 @@
+@import "./mixins.scss";
+@import "./_variables.scss";
+
+.selected-book {
+    color: $black;
+    padding-top: 8vh;
+    box-sizing: border-box;
+    background-color: $white;
+    @include flex(center, center, column);
+    @include size(100vw, 80vh);
+    .selected-book-image {
+        @include size(70vw, 45vh);
+        @include respond(width, 50vw, 30vw);
+    }
+    .selected-book-title {
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    p {
+        font-size: 2vh;
+        padding-top: 0.5vh;
+    }
+    .selected-book-description {
+        padding: 1vh;
+        font-size: 1.5vh;
+        border-radius: 12px;
+        background-color: $gray;
+        border: 1px solid $black;
+        max-width: -webkit-fill-available;
+    }
+}

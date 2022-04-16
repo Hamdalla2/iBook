@@ -1,0 +1,41 @@
+// screen widths
+$mobile-min: 360px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1023px;
+$desktop-min: 1024px;
+$desktop-max: 1399px;
+
+// colors
+$red: #d01d1b;
+$red-2: #ff0000;
+$blue: #023f85;
+$blue-2: #082f74;
+$white: #ffffff;
+$black: #000000;
+$grey: #323232;
+$gray: #767676;
+$gold: gold;
+$yellow: #c99e1c;
+$green: #82B808;
+$green-dark: #286040;
+
+// fonts
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+$font-sans: Arial, Helvetica, sans-serif;
+$font-varela: "Varela Round", sans-serif;
+$font-times: 'Times New Roman', Times, serif;
+$font-monospace: 'Courier New', Courier, monospace;
+$font-verdana: Verdana, 'Geneva', Tahoma, sans-serif;
+$font-gothic: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$font-cambria: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+
+// icons
+$arrow-down: ⯆;
+$arrow-next: '\203a';
+$arrow-prev: '\2039';
+$search-symbole: 🔍︎;
+$check-symbole: ✓;
+$green-check-symbole: ✔️;
+$wrong-symbole: X;
+$red-wrong-symbole: ❌;

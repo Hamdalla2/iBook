@@ -1,0 +1,21 @@
+{
+  "version": "1",
+  "manifest_version": 2,
+  "locale": ["en"],
+  "lang": "en-EN",
+  "title": "iBook",
+  "short_name": "iBook",
+  "name": "Book Browser",
+  "display": "browser",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "discription": "Project Made for an Interview Task",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

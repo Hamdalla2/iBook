@@ -1,0 +1,106 @@
+@import "./_mixins.scss";
+@import "./_variables.scss";
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    @include size(auto, 32vh);
+    &:nth-child(odd) {
+        background-color: #F6F6F6;
+        .carousel-title {
+            color: $black;
+            font-size: 1.5vh;
+            font-weight: bold;
+            padding: 3vh 5vw 0;
+            @include respond(font-size, 2vh, 3vh);
+        }
+        .book-title {
+            color: $black;
+            font-size: 1vh;
+            font-weight: bold;
+            @include respond(font-size, 2vh);
+        }
+        .book-author, .book-reviewedBy {
+            color: $grey;
+            font-size: 1vh;
+            @include respond(font-size, 1.5vh, 2vh);
+        }
+    }
+    &:nth-child(even) {
+        background-color: $black;
+        .carousel-title {
+            color: $white;
+            font-size: 1.5vh;
+            padding: 3vh 5vw 0;
+            @include respond(font-size, 2vh, 3vh);
+        }
+        .book-title {
+            color: $white;
+            font-size: 1vh;
+            @include respond(font-size, 2vh);
+        }
+        .book-author, .book-reviewedBy {
+            color: $green;
+            font-size: 1vh;
+            @include respond(font-size, 1.5vh, 2vh);
+        }
+    }
+    @include respond(height, 50vh);
+    .carousel {
+        padding-top: 1vh;
+        transition: 1s ease-in-out;
+        @include flex();
+        @include respond(padding-left, 10vw);
+        .book {
+            padding-left: 33vw;
+            @include size(50vw, 25vh);
+            @include respond(padding-left, 0);
+            @include respond(width, 27vw, 16vw);
+            &:nth-child(3n) {
+                @include respond(padding-right, 10vw, 0);
+            }
+            &:nth-child(5n) {
+                @media screen and (min-width: $desktop-min) {
+                    padding-right: 10vw;
+                }
+            }
+            .book-image {
+                @include size(auto, 20vh);
+                @include respond(width, 25vw, 15vw);
+                @include respond(height, 30vh, 33vh);
+            }
+            .book-details {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.arrow-left, .arrow-right {
+    top: 0;
+    left: 15vw;
+    position: absolute;
+    @include size(auto, 100%);
+    @include respond(left, 5vw);
+}
+.arrow-right {
+    left: 85vw;
+    @include respond(left, 95vw);
+}
+.prev, .next {
+    color: $gray;
+    font-size: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    border: 1px solid $gray;
+    background-color: $white;
+    font-family: $font-varela;
+    @include size(50px, 50px);
+    @include respond(line-height, 4vh, 5vh);
+}
+.prev {
+    @include absolute(50%, 10%);
+}
+.next {
+    @include absolute(50%, 90%);    
+}

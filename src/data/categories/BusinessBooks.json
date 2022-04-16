@@ -1,0 +1,40 @@
+{
+	"title": "Business Books",
+	"books": [
+		{
+			"id": 7,
+			"image": "/images/book7.jpg",
+			"title": "Book Thief",
+			"author": "Markus Zusak",
+			"reviewedBy": "Etiam feugiat"
+		},
+		{
+			"id": 6,
+			"image": "/images/book6.jpg",
+			"title": "Those Who Wish Me Dead",
+			"author": "Michael Koryta",
+			"reviewedBy": "Phasellus volutpat"
+		},
+		{
+			"id": 5,
+			"image": "/images/book5.jpg",
+			"title": "To Rise Again",
+			"author": "Joshua Ferris",
+			"reviewedBy": "Nunc nec"
+		},
+		{
+			"id": 4,
+			"image": "/images/book4.jpg",
+			"title": "No Place to Hide",
+			"author": "Glenn Greenwald",
+			"reviewedBy": "Etiam feugiat"
+		},
+		{
+			"id": 3,
+			"image": "/images/book3.jpg",
+			"title": "The Book of Unknown Americans",
+			"author": "Christina Henriquez",
+			"reviewedBy": "Phasellus volutpat"
+		}
+	]
+}

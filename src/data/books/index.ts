@@ -1,0 +1,21 @@
+import Book1 from "./book1.json";
+import Book2 from "./book2.json";
+import Book3 from "./book3.json";
+import Book4 from "./book4.json";
+import Book5 from "./book5.json";
+import Book6 from "./book6.json";
+import Book7 from "./book7.json";
+import Book8 from "./book8.json";
+import Book9 from "./book9.json";
+import Book10 from "./book10.json";
+import Book11 from "./book11.json";
+import Book12 from "./book12.json";
+import Book13 from "./book13.json";
+import Book14 from "./book14.json";
+import Book15 from "./book15.json";
+import Book16 from "./book16.json";
+import Book17 from "./book17.json";
+import Book18 from "./book18.json";
+
+const files = { Book1, Book2, Book3, Book4, Book5, Book6, Book7, Book8, Book9, Book10, Book11, Book12, Book13, Book14, Book15, Book16, Book17, Book18 };
+export default files;

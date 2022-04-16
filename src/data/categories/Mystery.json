@@ -1,0 +1,12 @@
+{
+	"title": "Mystery",
+	"books": [
+		{
+			"id": 8,
+			"image": "/images/book8.jpg",
+			"title": "The Elle Chronicles",
+			"author": "John Marsden",
+			"reviewedBy": "Nunc nec"
+		}
+	]
+}

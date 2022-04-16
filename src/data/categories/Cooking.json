@@ -1,0 +1,19 @@
+{
+	"title": "Cooking",
+	"books": [
+		{
+			"id": 11,
+			"image": "/images/book11.jpg",
+			"title": "The Bootlegger",
+			"author": "Justin Scott",
+			"reviewedBy": "Nunc nec"
+		},
+		{
+			"id": 8,
+			"image": "/images/book8.jpg",
+			"title": "The Elle Chronicles",
+			"author": "John Marsden",
+			"reviewedBy": "Nunc nec"
+		}
+	]
+}

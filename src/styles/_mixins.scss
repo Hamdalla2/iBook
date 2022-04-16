@@ -1,0 +1,30 @@
+@mixin size($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex($align: center, $justify: center, $flow: row nowrap) {
+    display: flex;
+    flex-flow: $flow;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin absolute($top: auto, $left: auto) {
+    top: $top;
+    left: $left;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+@mixin respond($attribute: height, $tablet: auto, $desktop: $tablet, $extra: $desktop) {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+        #{$attribute}: $tablet;
+    }
+    @media screen and (min-width: $desktop-min) and (max-width: $desktop-max) {
+        #{$attribute}: $desktop;
+    }
+    @media screen and (min-width: $desktop-max) {
+        #{$attribute}: $extra;
+    }
+}

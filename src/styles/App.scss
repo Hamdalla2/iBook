@@ -1,0 +1,79 @@
+@import "./_variables.scss";
+
+* {
+    font-family: $font-sans;
+    scroll-behavior:smooth;
+    font-size: 1vh;
+    cursor: none;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-color: $blue;
+    overflow-x: hidden;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+a, input, button {
+    text-decoration: none;
+    border: none;
+}
+
+a:focus, input:focus, button:focus {
+    outline: none;
+}
+
+fieldset {
+    border: none;
+}
+
+i {
+    font-style: normal;
+}
+
+#root, .container {
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-flow: row;
+}
+
+.col {
+    flex-flow: column;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.space {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.cursor {
+    transform: translate(-50%, -50%);
+    border: 0.4vh solid gold;
+    background-color: $red;
+    pointer-events: none;
+    border-radius: 50%;
+    position: fixed;
+    height: 0.5vw;
+    width: 0.5vw;
+    z-index: 99;
+}

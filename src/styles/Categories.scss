@@ -1,0 +1,50 @@
+@import "./_mixins.scss";
+@import "./_variables.scss";
+
+.categories {
+    padding: 10vh 5vw 3vh;
+    background-color: $white;
+    @include size(100%, 27vh);
+    @include respond(height, 27vh, 40vh);
+    .categories-title {
+        * {
+            color: $black;
+            font-size: 1.5vh;
+            @include respond(font-size, 1.5vh, 3vh);
+        }
+    }
+    .categories-grid {
+        row-gap: 1vh;
+        display: grid;
+        padding-top: 1vh;
+        grid-template-columns: auto auto auto;
+        @include size(90vw);
+        @include respond(padding-top, 1vh, 6vh);
+        @include respond(grid-template-columns, auto auto auto, auto auto auto auto);
+        .category-item {
+            font-size: 1vh;
+            text-align: center;
+            @include flex(flex-start);
+            @include size(30vw);
+            @include respond(width, 30vw, 20vw); 
+            .category-image {
+                @include size(10vw);                
+                @include respond(width, 10vw, 8vw);
+            }
+            .category-details {
+                text-align: left;
+                @include size(20vw);
+            }
+            .category-title {
+                color: $black;
+                font-size: 1vh;
+                @include respond(font-size, 1vh, 2vh);
+            }
+            .category-discription {
+                color: $grey;
+                font-size: 1vh;
+                @include respond(font-size, 1vh, 1.5vh);
+            }
+        }
+    }
+}

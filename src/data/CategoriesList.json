@@ -1,0 +1,52 @@
+{
+	"categories": [
+		{
+			"id": 1,
+			"image": "/images/category1.png",
+			"title": "Audio Books",
+			"description": "Mauris fermentum tortor non enim aliquet cond imentum nam aliquam."
+		},
+		{
+			"id": 2,
+			"image": "/images/category2.png",
+			"title": "Business Books",
+			"description": "Fermentum tortor non enim aliquet cond imentum nam aliquam."
+		},
+		{
+			"id": 3,
+			"image": "/images/category3.png",
+			"title": "Children's Books",
+			"description": "Tortor non enim aliquet cond imentum nam aliquam pretium feugiat."
+		},
+		{
+			"id": 4,
+			"image": "/images/category4.png",
+			"title": "Cooking",
+			"description": "Aliquet cond imentum nam aliquam pretium feugiat. Duis sem est."
+		},
+		{
+			"id": 5,
+			"image": "/images/category5.png",
+			"title": "Lifestyles",
+			"description": "Imentum nam aliquam. pretium feugiat. Duis sem est, viverra eu."
+		},
+		{
+			"id": 6,
+			"image": "/images/category6.png",
+			"title": "Mystery",
+			"description": "Pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit."
+		},
+		{
+			"id": 7,
+			"image": "/images/category7.png",
+			"title": "Romance",
+			"description": "Duis sem est viverra eu interdum ac, suscipit nec mauris suspendisse."
+		},
+		{
+			"id": 8,
+			"image": "/images/category8.png",
+			"title": "Science Fiction",
+			"description": "Suscipit nec mauris. Suspendisse commodo tempor sagittis!"
+		}
+	]
+}

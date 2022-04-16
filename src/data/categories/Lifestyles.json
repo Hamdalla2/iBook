@@ -1,0 +1,54 @@
+{
+	"title": "Lifestyle",
+	"books": [
+		{
+			"id": 8,
+			"image": "/images/book8.jpg",
+			"title": "The Elle Chronicles",
+			"author": "John Marsden",
+			"reviewedBy": "Nunc nec"
+		},
+		{
+			"id": 12,
+			"image": "/images/book12.jpg",
+			"title": "Balancing Art",
+			"author": "Joanna Trollope",
+			"reviewedBy": "Phasellus volutpat"
+		},
+		{
+			"id": 13,
+			"image": "/images/book13.jpg",
+			"title": "Mr William Shakespeare",
+			"author": "Marcia William",
+			"reviewedBy": "Etiam feugiat"
+		},
+		{
+			"id": 14,
+			"image": "/images/book14.jpg",
+			"title": "50 Fairy Things",
+			"author": "Usborne Activities",
+			"reviewedBy": "Nunc nec"
+		},
+		{
+			"id": 15,
+			"image": "/images/book15.jpg",
+			"title": "Songbirds",
+			"author": "Julia Donaldson's",
+			"reviewedBy": "Phasellus volutpat"
+		},
+		{
+			"id": 16,
+			"image": "/images/book16.jpg",
+			"title": "Ugarlump",
+			"author": "Lydia Monks",
+			"reviewedBy": "Etiam feugiat"
+		},
+		{
+			"id": 10,
+			"image": "/images/book10.jpg",
+			"title": "The Bootlegger",
+			"author": "Clive Cussler",
+			"reviewedBy": "Etiam feugiat"
+		}
+	]
+}
