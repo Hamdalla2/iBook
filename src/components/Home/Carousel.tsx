@@ -17,7 +17,7 @@ function Carousel({ category, i }: Props) {
   const carouselPosition = useRef(0);
   const screenWidth = useMemo(() => window.innerWidth, [window.innerWidth]);
   const divisor = useMemo(() => window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 3 : 5, [screenWidth])
-  const seekNumber = useMemo(() => Math.floor((Data[category].books.length - 1) / divisor), []);
+  const seekNumber = useMemo(() => Math.floor((Data[category].books.length - 1) / divisor), [divisor]);
   const distance = useMemo(() => divisor === 1 ? 83 : divisor === 3 ? 91 : 90, [divisor])
 
   const carouselPrev = useCallback((category: string) => {

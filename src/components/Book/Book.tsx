@@ -20,7 +20,7 @@ function Book() {
             <p className="selected-book-author">Author: {author}</p>
             <p className="selected-book-reviewer">Reviewer: {reviewedBy}</p>
             <p className="selected-book-date">Published: {publishedOn}</p>
-            <pre className="selected-book-description">{description.replace(/\./gi, "\n")}</pre>
+            <pre className="selected-book-description">{description.replace(/\. /gi, "\n")}</pre>
         </figure>
     );
 }

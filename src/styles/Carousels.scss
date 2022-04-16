@@ -16,8 +16,9 @@
         }
         .book-title {
             color: $black;
-            font-size: 1vh;
+            font-size: 1vh;            
             font-weight: bold;
+            padding-top: 0.5vh;
             @include respond(font-size, 2vh);
         }
         .book-author, .book-reviewedBy {
@@ -37,6 +38,7 @@
         .book-title {
             color: $white;
             font-size: 1vh;
+            padding-top: 0.5vh;
             @include respond(font-size, 2vh);
         }
         .book-author, .book-reviewedBy {
@@ -45,7 +47,7 @@
             @include respond(font-size, 1.5vh, 2vh);
         }
     }
-    @include respond(height, 50vh);
+    @include respond(height, 55vh);
     .carousel {
         padding-top: 1vh;
         transition: 1s ease-in-out;
