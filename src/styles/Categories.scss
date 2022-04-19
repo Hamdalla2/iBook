@@ -2,47 +2,50 @@
 @import "./_variables.scss";
 
 .categories {
-    padding: 10vh 5vw 3vh;
-    background-color: $white;
-    @include size(100%, 27vh);
+    padding: 60px 20px 10px;
     @include respond(height, 27vh, 40vh);
+
     .categories-title {
         * {
             color: $black;
-            font-size: 1.5vh;
+            font-size: 15px;
             @include respond(font-size, 1.5vh, 3vh);
         }
     }
+
     .categories-grid {
-        row-gap: 1vh;
+        row-gap: 10px;
         display: grid;
-        padding-top: 1vh;
-        grid-template-columns: auto auto auto;
-        @include size(90vw);
+        padding-top: 15px;
+        grid-template-columns: auto auto;
         @include respond(padding-top, 1vh, 6vh);
         @include respond(grid-template-columns, auto auto auto, auto auto auto auto);
+
         .category-item {
             font-size: 1vh;
             text-align: center;
-            @include flex(flex-start);
-            @include size(30vw);
-            @include respond(width, 30vw, 20vw); 
+            @include flex(flex-start, flex-start);
+            @include respond(width, 30vw, 20vw);
+
             .category-image {
-                @include size(10vw);                
+                @include size(75px);
                 @include respond(width, 10vw, 8vw);
             }
+
             .category-details {
                 text-align: left;
-                @include size(20vw);
             }
+
             .category-title {
                 color: $black;
-                font-size: 1vh;
+                font-size: 10px;
+                font-weight: 800;
                 @include respond(font-size, 1vh, 2vh);
             }
+
             .category-discription {
                 color: $grey;
-                font-size: 1vh;
+                font-size: 10px;
                 @include respond(font-size, 1vh, 1.5vh);
             }
         }

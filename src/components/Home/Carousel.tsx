@@ -1,12 +1,9 @@
 // libraries
-import $ from "jquery";
-import { useSelector, useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
 import React, { useRef, useCallback, useMemo } from "react";
 
 // files
 import Data from "../../data/categories";
-import { selectBook } from '../../redux/Actions';
 
 interface Props {
   category: string,
@@ -15,22 +12,19 @@ interface Props {
 
 function Carousel({ category, i }: Props) {
   const carouselPosition = useRef(0);
-  const screenWidth = useMemo(() => window.innerWidth, [window.innerWidth]);
-  const divisor = useMemo(() => window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 3 : 5, [screenWidth])
-  const seekNumber = useMemo(() => Math.floor((Data[category].books.length - 1) / divisor), [divisor]);
+  const screenWidth = window.innerWidth
+  const divisor = useMemo(() => screenWidth < 768 ? 1 : screenWidth < 1024 ? 3 : 5, [screenWidth])
+  const seekNumber = useMemo(() => Math.floor((Data[category].books.length - 1) / divisor), [divisor, category]);
   const distance = useMemo(() => divisor === 1 ? 83 : divisor === 3 ? 91 : 90, [divisor])
 
   const carouselPrev = useCallback((category: string) => {
     if (++carouselPosition.current > 0) carouselPosition.current = -seekNumber;
-    $(`#carousel-${category}`).css("transform", "translateX(" + (carouselPosition.current * distance) + "vw)")
-  }, [seekNumber]);
+    document.getElementById(`carousel-${category}`).style.transform="translateX(" + (carouselPosition.current * distance) + "vw)"
+  }, [seekNumber, distance]);
   const carouselNext = useCallback((category: string) => {
     if (--carouselPosition.current < -seekNumber) carouselPosition.current = 0;
-    $(`#carousel-${category}`).css("transform", "translateX(" + (carouselPosition.current * distance) + "vw)")
-  }, [seekNumber]);
-
-  const dispatch = useDispatch();
-  const sendBook = useCallback((selectedBook: number) => { dispatch(selectBook(selectedBook)) }, []);
+    document.getElementById(`carousel-${category}`).style.transform="translateX(" + (carouselPosition.current * distance) + "vw)"
+  }, [seekNumber, distance]);
 
   return (
     <fieldset className="carousel-container" key={i}>
@@ -39,7 +33,7 @@ function Carousel({ category, i }: Props) {
       <div className="carousel" id={`carousel-${category}`}>
         {Data[category].books.map((book: any, o: number) =>
           <article className="book" key={o}>
-            <Link to="/book" onClick={() => { sendBook(book.id) }}>
+            <Link to="/book" state={{ id: book.id }}>
               <img className="book-image" src={book.image} alt={`book${book.id}`} />
             </Link>
             <div className="book-details">

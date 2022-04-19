@@ -1,5 +1,5 @@
 # iBook #
-- My mini-project for the interview task at xngage.
+- Mini-project for front-end interview task at xngage.
 
 ## How to run ##
 - Install dependencies: ```npm i```
@@ -7,39 +7,40 @@
  
 ## Creation ##
 - Created with ```npx create-react-app ibook --template=typescript```
-- Added libraries ```npm i jquery sass redux react-redux react-dom react-router-dom```
+- Added libraries ```npm i sass react-dom react-router-dom```
 
 ## Developer ##
 - [Hamdallah Fatayer](https://github.com/Hamdalla2)
 
 ## Development Duration ##
 - Estimated: 5 Working Days.
-- Actual: 3 Working Days.
 
 ## Progress ##
 - header section ✔️
-- fetch data from categories json files ✔️
 - create images and icons ✔️
 - browse the categories grid section ✔️
 - readme file ✔️
 - html semantics ✔️
 - follow the design ✔️
-- mobile first ✔️
 - seo practices ✔️
 - high performance solution ✔️
 - typescript ✔️
 - footer section ✔️
 - header cascading menu ✔️
 - books carousels component ✔️
-- fetch data from books json files ✔️
 - fix json files ✔️
-- send book id by redux ✔️
-- apply responsive design ✔️
 - responsive carousels design ✔️
 - responsive carousels functionality ✔️
+- send book id ✔️
 
+## To Do ##
+- mobile first ❌
+- upload data from json files ❌
+- fetch data ❌
+- use carousel library ❌
+- apply responsive design ❌
 - highlight currently selected header and footer navigation ❌
-- smooth scrolling account for header height ❌
+- smooth scrolling should account for header height ❌
 - fix carousel on switching screen width ❌
 - pixel perfect ❌
 - adding tests ❌

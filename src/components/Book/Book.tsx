@@ -3,13 +3,15 @@ import "../../styles/Book.scss";
 
 // libraries
 import React from "react";
-import { RootStateOrAny, useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom';
 
 // files
 import Data from "../../data/books";
 
 function Book() {
-    const id = useSelector((state: RootStateOrAny) => state.selectedBook);
+    const location = useLocation();
+    const state: any = location.state;
+    const id = state.id;
     const book = Data[`Book${id}`];
     const { title, image, author, reviewedBy, publishedOn, description } = book;
 
