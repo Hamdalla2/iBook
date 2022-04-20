@@ -2,14 +2,15 @@
 @import "./_variables.scss";
 
 .carousel-container {
-    height:300px;
     overflow: hidden;
+    padding-left: 25%;
     position: relative;
     background-color: #F6F6F6;
+
     .carousel-title {
+        padding: 25px 0;
         font-size: 15px;
         font-weight: bold;
-        padding: 15px 20px;
         @include respond(font-size, 2vh, 3vh);
     }
 
@@ -18,6 +19,7 @@
         font-size: 12px;
         padding-top: 5px;
         font-weight: bold;
+        padding-bottom: 5px;
         @include respond(font-size, 2vh);
     }
 
@@ -31,7 +33,8 @@
     &:nth-child(even) {
         background-color: $black;
 
-        * {
+        .carousel-title,
+        .book-title {
             color: $white;
         }
 
@@ -44,15 +47,19 @@
     @include respond(height, 55vh);
 
     .carousel {
+        padding: 10px 0;
         transition: 1s ease-in-out;
-        @include flex();
+        @include flex(center, flex-start);
         @include respond(padding-left, 10vw);
 
         .book {
-            padding-left: 33vw;
-            @include size(50vw, 25vh);
+            padding-left: 100vw;
             @include respond(padding-left, 0);
             @include respond(width, 27vw, 16vw);
+
+            &:nth-child(1) {
+                padding-left: 0;
+            }
 
             &:nth-child(3n) {
                 @include respond(padding-right, 10vw, 0);
@@ -65,7 +72,7 @@
             }
 
             .book-image {
-                @include size(auto, 20vh);
+                @include size(50vw, auto);
                 @include respond(width, 25vw, 15vw);
                 @include respond(height, 30vh, 33vh);
             }
@@ -80,22 +87,22 @@
 .arrow-left,
 .arrow-right {
     top: 0;
-    left: 15vw;
+    left: 10vw;
     position: absolute;
     @include size(auto, 100%);
     @include respond(left, 5vw);
 }
 
 .arrow-right {
-    left: 85vw;
+    left: 90vw;
     @include respond(left, 95vw);
 }
 
 .prev,
 .next {
     color: $gray;
-    font-size: 5vh;
-    line-height: 5vh;
+    font-size: 40px;
+    line-height: 40px;
     text-align: center;
     border: 1px solid $gray;
     background-color: $white;

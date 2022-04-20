@@ -32,15 +32,15 @@
 - responsive carousels design ✔️
 - responsive carousels functionality ✔️
 - send book id ✔️
+- fix carousel on switching screen width ✔️
 
 ## To Do ##
 - mobile first ❌
 - upload data from json files ❌
 - fetch data ❌
-- use carousel library ❌
 - apply responsive design ❌
 - highlight currently selected header and footer navigation ❌
 - smooth scrolling should account for header height ❌
-- fix carousel on switching screen width ❌
 - pixel perfect ❌
+- use carousel library ❌
 - adding tests ❌

@@ -4,30 +4,43 @@
 .footer {
     overflow: hidden;
     background-color: $grey;
-    @include flex();
-    @include size(100%, 20vh);
-    @include respond(height, 42vh, 20vh);
+    @include flex(flex-start);
+
     .footer-section {
         padding: 10px 10px 0;
         box-sizing: border-box;
-        border-left: 1px solid $black;
-        @include size(auto, 100%);
+
         &.footer-categories {
-            column-count: 3;
+            border: 1px solid #292929;
+
+            @media screen and (min-width:500px) {
+                column-count: 2;
+            }
+
+            @media screen and (min-width:700px) {
+                column-count: 3;
+            }
         }
     }
+
     .footer-title {
         color: white;
+        font-size: 15px;
         text-transform: uppercase;
         @include size(max-content, auto);
     }
+
     .footer-list {
         list-style: none;
+
         .footer-list-item {
-            padding-top: 0.5vh;
-            a {
+            padding-top: 5px;
+
+            a div {
                 color: $gray;
-                text-align: center;
+                font-size: 14px;
+                text-align: start;
+
                 &:focus {
                     color: $green;
                 }

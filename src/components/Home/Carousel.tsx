@@ -1,6 +1,7 @@
 // libraries
+import debounce from 'lodash.debounce';
 import { Link } from "react-router-dom";
-import React, { useRef, useCallback, useMemo } from "react";
+import React, { useState, useRef } from "react";
 
 // files
 import Data from "../../data/categories";
@@ -12,19 +13,21 @@ interface Props {
 
 function Carousel({ category, i }: Props) {
   const carouselPosition = useRef(0);
-  const screenWidth = window.innerWidth
-  const divisor = useMemo(() => screenWidth < 768 ? 1 : screenWidth < 1024 ? 3 : 5, [screenWidth])
-  const seekNumber = useMemo(() => Math.floor((Data[category].books.length - 1) / divisor), [divisor, category]);
-  const distance = useMemo(() => divisor === 1 ? 83 : divisor === 3 ? 91 : 90, [divisor])
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const divisor: number = screenWidth < 768 ? 1 : screenWidth < 1024 ? 3 : 5;
+  const seekNumber: number = Math.floor((Data[category].books.length - 1) / divisor);
+  const distance: number = divisor === 1 ? 150 : divisor === 3 ? 150:150;
 
-  const carouselPrev = useCallback((category: string) => {
+  window.addEventListener('resize', debounce(() => { setScreenWidth(window.innerWidth); carouselPosition.current = 0; document.getElementById(`carousel-${category}`).style.transform = "translateX(0)" }, 500));
+
+  const carouselPrev = (category: string) => {
     if (++carouselPosition.current > 0) carouselPosition.current = -seekNumber;
-    document.getElementById(`carousel-${category}`).style.transform="translateX(" + (carouselPosition.current * distance) + "vw)"
-  }, [seekNumber, distance]);
-  const carouselNext = useCallback((category: string) => {
+    document.getElementById(`carousel-${category}`).style.transform = "translateX(" + (carouselPosition.current * distance) + "vw)";
+  }
+  const carouselNext = (category: string) => {
     if (--carouselPosition.current < -seekNumber) carouselPosition.current = 0;
-    document.getElementById(`carousel-${category}`).style.transform="translateX(" + (carouselPosition.current * distance) + "vw)"
-  }, [seekNumber, distance]);
+    document.getElementById(`carousel-${category}`).style.transform = "translateX(" + (carouselPosition.current * distance) + "vw)";
+  }
 
   return (
     <fieldset className="carousel-container" key={i}>
