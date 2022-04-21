@@ -7,8 +7,9 @@
 - Run the app: ```npm start```
  
 ## Creation ##
-- Created with ```npx create-react-app ibook --template=typescript```
-- Added libraries ```npm i sass react-dom react-router-dom```
+- front end: react ts
+- back end: node js express
+- database: mongodb atlas
 
 ## Developer ##
 - [Hamdallah Fatayer](https://github.com/Hamdalla2)
@@ -39,6 +40,7 @@
 - apply responsive design ✔️
 
 ## To Do ##
+- hide database uri in env file ❌
 - highlight currently selected navigation ❌
 - scrolling should account for header height ❌
 - adding tests ❌

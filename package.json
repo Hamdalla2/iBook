@@ -8,7 +8,6 @@
     "@testing-library/user-event": "*",
     "cra-template-typescript": "*",
     "lodash": "*",
-    "react": "*",
     "react-dom": "*",
     "react-router-dom": "*",
     "react-scripts": "*",
