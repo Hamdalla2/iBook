@@ -43,7 +43,6 @@ function Carousel({ title, i }: Props) {
   useEffect(() => {
     measure();
     window.addEventListener('resize', debouncedResize());
-    return () => { window.removeEventListener('resize', debouncedResize()); };
   }, [debouncedResize, measure]);
 
   const carouselPrev = (category: any) => {
