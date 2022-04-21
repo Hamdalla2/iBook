@@ -38,7 +38,7 @@ function Carousel({ title, i }: Props) {
     if (category.href) {
       document.getElementById(`carousel${category.href}`).style.transform = "translateX(0)";
     };
-  }, 500), [category, measure]);
+  }, 100), [category, measure]);
 
   useEffect(() => {
     measure();

@@ -21,6 +21,10 @@
         @include respond(padding-top, 20px);
         @include respond(grid-template-columns, auto auto auto, auto auto auto auto);
 
+        @media screen and (max-width: 400px) {
+            grid-template-columns: auto;
+        }
+
         .category-item {
             text-align: center;
             @include flex(flex-start, flex-start);
@@ -36,14 +40,14 @@
 
             .category-title {
                 color: $black;
-                font-size: 10px;
+                font-size: 12px;
                 font-weight: 800;
                 @include respond(font-size, 15px, 18px);
             }
 
             .category-discription {
                 color: $grey;
-                font-size: 10px;
+                font-size: 12px;
                 @include respond(font-size, 12px);
             }
         }

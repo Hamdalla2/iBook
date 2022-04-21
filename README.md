@@ -43,4 +43,5 @@
 - hide database uri in env file ❌
 - highlight currently selected navigation ❌
 - scrolling should account for header height ❌
+- fix carousel breaking after too much resizing ❌
 - adding tests ❌
