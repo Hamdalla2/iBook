@@ -3,6 +3,7 @@
 
 ## How to run ##
 - Install dependencies: ```npm i```
+- Run the server & databse: ```npm run server```
 - Run the app: ```npm start```
  
 ## Creation ##
@@ -34,13 +35,10 @@
 - fix carousel on switching screen width ✔️
 - upload data from json files ✔️
 - fetch data ✔️
+- mobile first ✔️
+- apply responsive design ✔️
 
 ## To Do ##
-- mobile first ❌
-- apply responsive design ❌
-- highlight currently selected header and footer navigation ❌
-- smooth scrolling should account for header height ❌
-- high performance solution ❌
-- pixel perfect ❌
-- use carousel library ❌
+- highlight currently selected navigation ❌
+- scrolling should account for header height ❌
 - adding tests ❌
