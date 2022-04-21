@@ -9,37 +9,45 @@
     position: fixed;
     background-color: $green;
     @include size(100%, 50px);
-    @include respond(height, 5vh, 7vh);
+    @include respond(height, 70px);
 }
 
 .header-logo {
+    top: 50%;
+    left: 50px;
     display: none;
-    color: $white;
-    @include absolute(50%, 25%);
-    @include respond(left, 20%, 10%);
+    position: absolute;
+    transform: translateY(-50%);
+    @include respond(left, 50px, 100px);
+    @include respond(display, block);
 
     .header-logo-book,
     .header-logo-reviews {
-        @include respond(font-size, 2vh, 3vh);
+        color: $white;
+        @include respond(font-size, 25px);
     }
 }
 
 .navbar {
-    margin-top: 20px;
     padding: 0 20px;
+    @include absolute(50%, 50%);
+    @include respond(left, 70%);
+    @include respond(padding, 0);
 
     .navbar-main-menu {
         list-style: none;
         text-transform: uppercase;
         @include flex(center, space-around);
 
-
         .navbar-main-item {
             margin-right: 10px;
+            @include respond(margin-right, 15px, 50px);
 
             &#booksMainMenu {
+                cursor: pointer;
                 position: relative;
                 padding-right: 10px;
+                @include respond(padding-right, 15px, 25px);
             }
 
             &#searchMainMenu {
@@ -54,8 +62,8 @@
                 line-height: 12px;
                 font-weight: bold;
                 text-align: center;
-                @include respond(font-size, 1vh, 2vh);
-                @include respond(line-height, 1vh, 2vh);
+                @include respond(font-size, 15px);
+                @include respond(line-height, 1px);
 
                 &:hover {
                     color: $grey;
@@ -81,7 +89,7 @@
         list-style: none;
         text-transform: none;
         transform: translate(-40%, 10%);
-        @include respond(transform, translate(-25%, 10%));
+        @include respond(transform, translate(-40%, 18%));
         @include flex(flex-start, center, column nowrap);
 
         .navbar-sub-item {
@@ -91,8 +99,10 @@
                 padding: 5px;
                 color: $white;
                 font-size: 14px;
+                line-height: 14px;
                 border: 1px solid $gray;
                 background-color: $green;
+                @include respond(width, 200px);
             }
 
             .navbar-sub-item-text:hover {

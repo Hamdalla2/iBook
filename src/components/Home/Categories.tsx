@@ -1,9 +1,17 @@
 // libraries
-import React from "react";
-import Data from '../../data/CategoriesList.json';
+import React, { useEffect, useState } from "react";
 
 function Categories() {
-  const { categories } = Data;
+
+  const [list, setList] = useState<any>({});
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/categorieslist`)
+      .then(response => response.json())
+      .then(data => setList(data[0]))
+  }, [])
+
+  const { categories } = list;
 
   return (
     <section className="categories" id="categories">
@@ -13,9 +21,9 @@ function Categories() {
       </p>
 
       <fieldset className="categories-grid">
-        {categories.map((category, i:number) =>
+        {categories?.map((category, i: number) =>
           <article className="category-item" key={i}>
-            <a href={`#carousel-${category.title.replace(/'| /gi, '')}`}>
+            <a href={`#carouselContainer${category.href}`}>
               <img className="category-image" src={category.image} alt={`category${category.id}`} />
             </a>
             <div className="category-details">

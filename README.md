@@ -23,7 +23,6 @@
 - html semantics ✔️
 - follow the design ✔️
 - seo practices ✔️
-- high performance solution ✔️
 - typescript ✔️
 - footer section ✔️
 - header cascading menu ✔️
@@ -33,14 +32,15 @@
 - responsive carousels functionality ✔️
 - send book id ✔️
 - fix carousel on switching screen width ✔️
+- upload data from json files ✔️
+- fetch data ✔️
 
 ## To Do ##
 - mobile first ❌
-- upload data from json files ❌
-- fetch data ❌
 - apply responsive design ❌
 - highlight currently selected header and footer navigation ❌
 - smooth scrolling should account for header height ❌
+- high performance solution ❌
 - pixel perfect ❌
 - use carousel library ❌
 - adding tests ❌

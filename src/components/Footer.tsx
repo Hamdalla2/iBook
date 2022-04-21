@@ -35,12 +35,12 @@ function Footer() {
           <li className="footer-list-item"><a href="#ebooks"><div>Ebooks</div></a></li>
           <li className="footer-list-item"><a href="#fantasy"><div>Fantasy</div></a></li>
           <li className="footer-list-item"><a href="#fiction"><div>Fiction</div></a></li>
-          <li className="footer-list-item"><a href="#gay"><div>Gay And Lesbian</div></a></li>
+          <li className="footer-list-item"><a href="#gay"><div>Gay & Lesbian</div></a></li>
           <li className="footer-list-item"><a href="#graphic"><div>Graphic Novels</div></a></li>
           <li className="footer-list-item"><a href="#historical"><div>Historical Fiction</div></a></li>
           <li className="footer-list-item"><a href="#history"><div>History</div></a></li>
           <li className="footer-list-item"><a href="#horror"><div>Horror</div></a></li>
-          <li className="footer-list-item"><a href="#humor"><div>Humor And Comedy</div></a></li>
+          <li className="footer-list-item"><a href="#humor"><div>Humor & Comedy</div></a></li>
           <li className="footer-list-item"><a href="#manga"><div>Manga</div></a></li>
           <li className="footer-list-item"><a href="#memoir"><div>Memoir</div></a></li>
           <li className="footer-list-item"><a href="#music"><div>Music</div></a></li>

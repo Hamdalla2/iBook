@@ -3,13 +3,13 @@
 
 .categories {
     padding: 60px 20px 10px;
-    @include respond(height, 27vh, 40vh);
+    @include respond(padding, 100px 50px 10px, 100px 100px 10px);
 
     .categories-title {
         * {
             color: $black;
             font-size: 15px;
-            @include respond(font-size, 1.5vh, 3vh);
+            @include respond(font-size, 20px, 30px);
         }
     }
 
@@ -18,18 +18,16 @@
         display: grid;
         padding-top: 15px;
         grid-template-columns: auto auto;
-        @include respond(padding-top, 1vh, 6vh);
+        @include respond(padding-top, 20px);
         @include respond(grid-template-columns, auto auto auto, auto auto auto auto);
 
         .category-item {
-            font-size: 1vh;
             text-align: center;
             @include flex(flex-start, flex-start);
-            @include respond(width, 30vw, 20vw);
 
             .category-image {
                 @include size(75px);
-                @include respond(width, 10vw, 8vw);
+                @include respond(width, 80px);
             }
 
             .category-details {
@@ -40,13 +38,13 @@
                 color: $black;
                 font-size: 10px;
                 font-weight: 800;
-                @include respond(font-size, 1vh, 2vh);
+                @include respond(font-size, 15px, 18px);
             }
 
             .category-discription {
                 color: $grey;
                 font-size: 10px;
-                @include respond(font-size, 1vh, 1.5vh);
+                @include respond(font-size, 12px);
             }
         }
     }

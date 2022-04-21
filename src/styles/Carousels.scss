@@ -6,12 +6,13 @@
     padding-left: 25%;
     position: relative;
     background-color: #F6F6F6;
+    @include respond(padding-left, 50px, 100px, 150px);
 
     .carousel-title {
         padding: 25px 0;
         font-size: 15px;
         font-weight: bold;
-        @include respond(font-size, 2vh, 3vh);
+        @include respond(font-size, 20px, 25px);
     }
 
     .book-title {
@@ -20,14 +21,14 @@
         padding-top: 5px;
         font-weight: bold;
         padding-bottom: 5px;
-        @include respond(font-size, 2vh);
+        @include respond(font-size, 15px, 18px);
     }
 
     .book-author,
     .book-reviewedBy {
         color: $grey;
         font-size: 12px;
-        @include respond(font-size, 1.5vh, 2vh);
+        @include respond(font-size, 12px, 15px);
     }
 
     &:nth-child(even) {
@@ -44,37 +45,45 @@
         }
     }
 
-    @include respond(height, 55vh);
-
     .carousel {
         padding: 10px 0;
         transition: 1s ease-in-out;
         @include flex(center, flex-start);
-        @include respond(padding-left, 10vw);
+        @include respond(padding-left, 5vw, 0);
 
         .book {
             padding-left: 100vw;
-            @include respond(padding-left, 0);
-            @include respond(width, 27vw, 16vw);
+            @include respond(height, 45vw, 33vw, 28vw);
+
+            @media screen and (min-width: 700px) {
+                padding-left: 1vw;
+            }
+
+            @media screen and (min-width: 800px) {
+                padding-left: 2vw;
+            }
+
+            @media screen and (min-width: 1024px) {
+                padding-left: 1.5vw;
+            }
 
             &:nth-child(1) {
                 padding-left: 0;
             }
 
             &:nth-child(3n) {
-                @include respond(padding-right, 10vw, 0);
+                @include respond(padding-right, 100vw, 0);
             }
 
             &:nth-child(5n) {
                 @media screen and (min-width: $desktop-min) {
-                    padding-right: 10vw;
+                    padding-right: 100vw;
                 }
             }
 
             .book-image {
                 @include size(50vw, auto);
                 @include respond(width, 25vw, 15vw);
-                @include respond(height, 30vh, 33vh);
             }
 
             .book-details {
