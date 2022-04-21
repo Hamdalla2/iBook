@@ -8,8 +8,7 @@
     .categories-title {
         * {
             color: $black;
-            font-size: 15px;
-            @include respond(font-size, 20px, 30px);
+            font-size: 30px;
         }
     }
 
@@ -21,7 +20,7 @@
         @include respond(padding-top, 20px);
         @include respond(grid-template-columns, auto auto auto, auto auto auto auto);
 
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 500px) {
             grid-template-columns: auto;
         }
 
@@ -40,15 +39,15 @@
 
             .category-title {
                 color: $black;
-                font-size: 12px;
-                font-weight: 800;
-                @include respond(font-size, 15px, 18px);
+                font-size: 18px;
+                font-weight: 500;
             }
 
             .category-discription {
-                color: $grey;
-                font-size: 12px;
-                @include respond(font-size, 12px);
+                opacity: 0.5;
+                font-size: 15px;
+                padding-top: 5px;
+                line-height: 20px;
             }
         }
     }
