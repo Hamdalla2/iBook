@@ -12,34 +12,20 @@
         padding: 0 0 20px;
         font-size: 30px;
         font-weight: 500;
-
-        @media screen and (min-width: 400px) and (max-width:700px) {
-            font-size: 25px;
-        }
     }
 
     .book-title {
         color: $black;
-        font-size: 12px;
-        padding-top: 5px;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-weight: 500;
-        padding-bottom: 5px;
-        @include respond(font-size, 18px);
-
-        @media screen and (min-width: 400px) and (max-width:700px) {
-            font-size: 18px;
-        }
     }
 
     .book-author,
     .book-reviewedBy {
         opacity: 0.5;
-        font-size: 12px;
-        @include respond(font-size, 15px);
-
-        @media screen and (min-width: 400px) and (max-width:700px) {
-            font-size: 18px;
-        }
+        font-size: 18px;
     }
 
     &:nth-child(even) {

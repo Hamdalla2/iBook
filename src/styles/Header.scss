@@ -88,15 +88,15 @@
         position: fixed;
         list-style: none;
         text-transform: none;
-        transform: translate(-40%, 10%);
-        @include respond(transform, translate(-40%, 18%));
+        transform: translate(0, 7%);
+        @include respond(transform, translate(-40%, 12%));
         @include flex(flex-start, center, column nowrap);
 
         .navbar-sub-item {
             .navbar-sub-item-text {
                 width: 150px;
                 height: 15px;
-                padding: 5px;
+                padding: 12px;
                 color: $white;
                 font-size: 14px;
                 line-height: 14px;
