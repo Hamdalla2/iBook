@@ -5,7 +5,6 @@ Disallow: *.jpg
 Disallow: *.png
 Disallow: *.json
 
-// not real sitemaps, just showing seo practices
 Sitemap: https://www.ibook.com/en/sitemap.xml
 Sitemap: https://www.ibook.com/de/sitemap.xml
 Sitemap: https://www.ibook.com/fr/sitemap.xml

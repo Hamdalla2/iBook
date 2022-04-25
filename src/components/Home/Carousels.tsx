@@ -8,17 +8,15 @@ function Carousels() {
   const [list, setList] = useState<any>({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/categorieslist`)
+    fetch(`https://api.jsonbin.io/b/626617f325069545a328c5e3`)
       .then(response => response.json())
-      .then(data => setList(data[0]))
+      .then(data => setList(data))
   }, [])
-
-  const { categories } = list;
 
   return (
     <section className="carousels" id="books">
-      {categories?.map((category: any, i: number) =>
-        <Carousel title={category.title} i={i} key={i} />
+      {Object.keys(list)?.map((category: any, i: number) =>
+        <Carousel books={list[category].books} title={category} linkTarget={list[category].href} i={i} key={i} />
       )}
     </section>
   );

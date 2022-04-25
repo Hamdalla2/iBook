@@ -10,11 +10,10 @@ import Navbar from "./Navbar";
 function Header() {
     return (
         <header className="header">
-            <a href="#categories" className="header-logo">
+            <a href="/" className="header-logo">
                 <b className="header-logo-book">Books</b>
                 <span className="header-logo-reviews">Reviews</span>
             </a>
-
             <Navbar />
         </header>
     );

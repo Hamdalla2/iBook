@@ -14,11 +14,11 @@
 
 .header-logo {
     top: 50%;
-    left: 50px;
+    left: 100px;
     display: none;
     position: absolute;
     transform: translateY(-50%);
-    @include respond(left, 50px, 100px);
+    @include respond(left, 50px, 100px, 150px);
     @include respond(display, block);
 
     .header-logo-book,
@@ -29,25 +29,46 @@
 }
 
 .navbar {
+    @media screen and (max-width:$mobile-max) {
+        width: 100%;
+    }
+
     padding: 0 20px;
-    @include absolute(50%, 50%);
-    @include respond(left, 70%);
+    box-sizing: border-box;
+    @include absolute(50%, 100%);
+    @include respond(left, calc(100% - 50px), calc(100% - 100px), calc(100% - 150px));
     @include respond(padding, 0);
+    transform: translate(-100%, -50%);
+
+    .show-navbar {
+        @media screen and (min-width:$mobile-max) {
+            display: none;
+        }
+
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        float: right;
+        transform: translateY(-30%);
+    }
 
     .navbar-main-menu {
+        @media screen and (max-width:$mobile-max) {
+            display: none;
+        }
+
         list-style: none;
         text-transform: uppercase;
         @include flex(center, space-around);
 
         .navbar-main-item {
             margin-right: 10px;
-            @include respond(margin-right, 15px, 50px);
 
             &#booksMainMenu {
                 cursor: pointer;
                 position: relative;
                 padding-right: 10px;
-                @include respond(padding-right, 15px, 25px);
+                @include respond(padding-right, 15px);
             }
 
             &#searchMainMenu {
@@ -102,7 +123,7 @@
                 line-height: 14px;
                 border: 1px solid $gray;
                 background-color: $green;
-                @include respond(width, 200px);
+                @include respond(width, 150px);
             }
 
             .navbar-sub-item-text:hover {

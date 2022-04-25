@@ -10,49 +10,47 @@ function Footer() {
       <section className="footer-section footer-navigation">
         <p className="footer-title">Navigation</p>
         <ul className="footer-list">
-          <li className="footer-list-item"><a href="#home"><div>Home</div></a></li>
-          <li className="footer-list-item"><a href="#books"><div>Books</div></a></li>
-          <li className="footer-list-item"><a href="#reviews"><div>Reviews</div></a></li>
-          <li className="footer-list-item"><a href="#news"><div>News</div></a></li>
-          <li className="footer-list-item"><a href="#footer"><div>Contacts</div></a></li>
+          <li className="footer-list-item"><a href="#home"><div className="footer-list-link" tabIndex={-1}>Home</div></a></li>
+          <li className="footer-list-item"><a href="#books"><div className="footer-list-link" tabIndex={-1}>Books</div></a></li>
+          <li className="footer-list-item"><a href="#reviews"><div className="footer-list-link" tabIndex={-1}>Reviews</div></a></li>
+          <li className="footer-list-item"><a href="#news"><div className="footer-list-link" tabIndex={-1}>News</div></a></li>
+          <li className="footer-list-item"><a href="#footer"><div className="footer-list-link" tabIndex={-1}>Contacts</div></a></li>
         </ul>
       </section>
-      <span className="vertical-line" />
       <section className="footer-section footer-categories">
         <p className="footer-title">Categories</p>
         <ul className="footer-list">
-          <li className="footer-list-item"><a href="#art"><div>Art</div></a></li>
-          <li className="footer-list-item"><a href="#biography"><div>Biography</div></a></li>
-          <li className="footer-list-item"><a href="#business"><div>Business</div></a></li>
-          <li className="footer-list-item"><a href="#chick"><div>Chick Lit</div></a></li>
-          <li className="footer-list-item"><a href="#children"><div>Children's</div></a></li>
-          <li className="footer-list-item"><a href="#christian"><div>Christian</div></a></li>
-          <li className="footer-list-item"><a href="#classics"><div>Classics</div></a></li>
-          <li className="footer-list-item"><a href="#comics"><div>Comics</div></a></li>
-          <li className="footer-list-item"><a href="#contemporary"><div>Contemporary</div></a></li>
-          <li className="footer-list-item"><a href="#cookbooks"><div>Cookbooks</div></a></li>
-          <li className="footer-list-item"><a href="#crime"><div>Crime</div></a></li>
-          <li className="footer-list-item"><a href="#ebooks"><div>Ebooks</div></a></li>
-          <li className="footer-list-item"><a href="#fantasy"><div>Fantasy</div></a></li>
-          <li className="footer-list-item"><a href="#fiction"><div>Fiction</div></a></li>
-          <li className="footer-list-item"><a href="#gay"><div>Gay & Lesbian</div></a></li>
-          <li className="footer-list-item"><a href="#graphic"><div>Graphic Novels</div></a></li>
-          <li className="footer-list-item"><a href="#historical"><div>Historical Fiction</div></a></li>
-          <li className="footer-list-item"><a href="#history"><div>History</div></a></li>
-          <li className="footer-list-item"><a href="#horror"><div>Horror</div></a></li>
-          <li className="footer-list-item"><a href="#humor"><div>Humor & Comedy</div></a></li>
-          <li className="footer-list-item"><a href="#manga"><div>Manga</div></a></li>
-          <li className="footer-list-item"><a href="#memoir"><div>Memoir</div></a></li>
-          <li className="footer-list-item"><a href="#music"><div>Music</div></a></li>
+          <li className="footer-list-item"><a href="#art"><div className="footer-list-link" tabIndex={-1}>Art</div></a></li>
+          <li className="footer-list-item"><a href="#biography"><div className="footer-list-link" tabIndex={-1}>Biography</div></a></li>
+          <li className="footer-list-item"><a href="#business"><div className="footer-list-link" tabIndex={-1}>Business</div></a></li>
+          <li className="footer-list-item"><a href="#chick"><div className="footer-list-link" tabIndex={-1}>Chick Lit</div></a></li>
+          <li className="footer-list-item"><a href="#childrens"><div className="footer-list-link" tabIndex={-1}>Children's</div></a></li>
+          <li className="footer-list-item"><a href="#christian"><div className="footer-list-link" tabIndex={-1}>Christian</div></a></li>
+          <li className="footer-list-item"><a href="#classics"><div className="footer-list-link" tabIndex={-1}>Classics</div></a></li>
+          <li className="footer-list-item"><a href="#comics"><div className="footer-list-link" tabIndex={-1}>Comics</div></a></li>
+          <li className="footer-list-item"><a href="#contemporary"><div className="footer-list-link" tabIndex={-1}>Contemporary</div></a></li>
+          <li className="footer-list-item"><a href="#cookbooks"><div className="footer-list-link" tabIndex={-1}>Cookbooks</div></a></li>
+          <li className="footer-list-item"><a href="#crime"><div className="footer-list-link" tabIndex={-1}>Crime</div></a></li>
+          <li className="footer-list-item"><a href="#ebooks"><div className="footer-list-link" tabIndex={-1}>Ebooks</div></a></li>
+          <li className="footer-list-item"><a href="#fantasy"><div className="footer-list-link" tabIndex={-1}>Fantasy</div></a></li>
+          <li className="footer-list-item"><a href="#fiction"><div className="footer-list-link" tabIndex={-1}>Fiction</div></a></li>
+          <li className="footer-list-item"><a href="#gay"><div className="footer-list-link" tabIndex={-1}>Gay and Lesbian</div></a></li>
+          <li className="footer-list-item"><a href="#graphic"><div className="footer-list-link" tabIndex={-1}>Graphic Novels</div></a></li>
+          <li className="footer-list-item"><a href="#historical"><div className="footer-list-link" tabIndex={-1}>Historical Fiction</div></a></li>
+          <li className="footer-list-item"><a href="#history"><div className="footer-list-link" tabIndex={-1}>History</div></a></li>
+          <li className="footer-list-item"><a href="#horror"><div className="footer-list-link" tabIndex={-1}>Horror</div></a></li>
+          <li className="footer-list-item"><a href="#humor"><div className="footer-list-link" tabIndex={-1}>Humor and Comedy</div></a></li>
+          <li className="footer-list-item"><a href="#manga"><div className="footer-list-link" tabIndex={-1}>Manga</div></a></li>
+          <li className="footer-list-item"><a href="#memoir"><div className="footer-list-link" tabIndex={-1}>Memoir</div></a></li>
+          <li className="footer-list-item"><a href="#music"><div className="footer-list-link" tabIndex={-1}>Music</div></a></li>
         </ul>
       </section>
-      <span className="vertical-line" />
       <section className="footer-section footer-contact">
         <p className="footer-title">Follow Us</p>
         <ul className="footer-list">
-          <li className="footer-list-item"><a href="https://www.facebook.com" target="_blank" rel="noreferrer"><div>Facebook</div></a></li>
-          <li className="footer-list-item"><a href="https://www.twitter.com" target="_blank" rel="noreferrer"><div>Twitter</div></a></li>
-          <li className="footer-list-item"><a href="#rss"><div>RSS</div></a></li>
+          <li className="footer-list-item"><a href="https://www.facebook.com" target="_blank" rel="noreferrer"><div className="footer-list-link" tabIndex={-1}>Facebook</div></a></li>
+          <li className="footer-list-item"><a href="https://www.twitter.com" target="_blank" rel="noreferrer"><div className="footer-list-link" tabIndex={-1}>Twitter</div></a></li>
+          <li className="footer-list-item"><a href="#rss"><div className="footer-list-link" tabIndex={-1}>RSS</div></a></li>
         </ul>
       </section>
     </footer>

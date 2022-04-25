@@ -3,14 +3,15 @@
 
 .carousel-container {
     overflow: hidden;
-    padding: 50px 0 50px 25%;
     position: relative;
     background-color: #F6F6F6;
-    @include respond(padding, 50px 0px 50px 50px, 50px 0px 50px 100px, 50px 0px 50px 150px);
+    padding: 50px 10px 60px;
+    @include respond(padding, 50px 40px 60px, 50px 90px 60px, 50px 140px 60px);
 
     .carousel-title {
-        padding: 0 0 20px;
         font-size: 30px;
+        padding-bottom: 20px;
+        padding-left: 10px;
         font-weight: 500;
     }
 
@@ -44,79 +45,55 @@
     }
 
     .carousel {
-        padding: 10px 0;
-        transition: 1s ease-in-out;
-        @include flex(flex-start, flex-start);
-        @include respond(padding-left, 5vw, 0);
 
-        .book {
-            padding-left: 100vw;
+        .book-image {
+            @include size(100%, auto);
+        }
 
-            @media screen and (min-width: 700px) {
-                padding-left: 1vw;
-            }
-
-            @media screen and (min-width: 1024px) {
-                padding-left: 1.5vw;
-            }
-
-            &:nth-child(1) {
-                padding-left: 0;
-            }
-
-            &:nth-child(3n) {
-                @include respond(padding-right, 100vw, 0);
-            }
-
-            &:nth-child(5n) {
-                @media screen and (min-width: $desktop-min) {
-                    padding-right: 100vw;
-                }
-            }
-
-            .book-image {
-                @include size(50vw, auto);
-                @include respond(width, 25vw, 15vw);
-            }
-
-            .book-details {
-                text-align: left;
-            }
+        .book-details {
+            width: 100%;
+            text-align: left;
         }
     }
 }
 
-.arrow-left,
-.arrow-right {
-    top: 0;
-    left: 10vw;
-    position: absolute;
-    @include size(auto, 100%);
-    @include respond(left, 5vw);
+.slick-prev {   
+    left: 0px;
+    @include respond(left, -40px, -50px, -90px);
 }
 
-.arrow-right {
-    left: 90vw;
-    @include respond(left, 95vw);
+.slick-next {
+    right: 0px;
+    @include respond(right, -40px, -50px, -90px);
 }
 
-.prev,
-.next {
+.slick-prev,
+.slick-next {
+    @include respond(background-color, transparent, $white);
+    @include respond(border, none, 1px solid rgba(0, 0, 0, 0.1));
+    @include size(50px, 50px);
+}
+
+.slick-next:before,
+.slick-prev:before {
+    content: "<";
     color: $gray;
     font-size: 40px;
     line-height: 40px;
-    text-align: center;
-    border: 1px solid $gray;
-    background-color: $white;
     font-family: $font-varela;
-    @include size(50px, 50px);
-    @include respond(line-height, 4vh, 5vh);
 }
 
-.prev {
-    @include absolute(50%, 10%);
+.slick-next:before {
+    content: ">";
 }
 
-.next {
-    @include absolute(50%, 90%);
+.slide-container div {
+    padding-right: 5px;
+    padding-left: 5px;
+    @include flex(center, center, column);
+}
+
+.slide-container div div {
+    width: 70%;
+    @include flex(flex-start, flex-start, column);
 }

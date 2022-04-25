@@ -3,21 +3,18 @@
 
 ## How to run ##
 - Install dependencies: ```npm i```
-- Run the server & databse: ```npm run server```
 - Run the app: ```npm start```
  
 ## Creation ##
-- front end: react ts
-- back end: node js express
-- database: mongodb atlas
+- react ts: ```npx create-react-app ibook --template=typescript```
 
 ## Developer ##
 - [Hamdallah Fatayer](https://github.com/Hamdalla2)
 
 ## Development Duration ##
-- Estimated: 5 Working Days.
+- Estimated: 7 Working Days.
 
-## Progress ##
+## version 0.1.0 ##
 - header section ✔️
 - create images and icons ✔️
 - browse the categories grid section ✔️
@@ -33,11 +30,18 @@
 - responsive carousels design ✔️
 - responsive carousels functionality ✔️
 - send book id ✔️
+
+## Version 1.0.0 ##
 - fix carousel on switching screen width ✔️
-- upload data from json files ✔️
-- fetch data ✔️
+- upload data from json files to database ✔️
+- fetch data instead importing local json files ✔️
 - mobile first ✔️
 - apply responsive design ✔️
+
+## Version 1.1.0 ###
+- deleted server ✔️
+- fetching data from uploaded uri links ✔️
+- replacing carousel with a library ✔️
 
 ## To Do ##
 - hide database uri in env file ❌

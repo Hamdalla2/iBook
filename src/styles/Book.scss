@@ -14,12 +14,8 @@
 
     .selected-book-image {
         @include size(auto, 300px);
-        @include respond(height, 400px, 500px);
+        @include respond(height, 500px, 500px);
         @include respond(padding-right, 50px);
-
-        @media screen and (max-width: 768px) {
-            padding-right: 5px;
-        }
     }
 
     .selected-book-details {

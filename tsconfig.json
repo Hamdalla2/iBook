@@ -1,4 +1,3 @@
-
 {
     "compilerOptions": {
         "outDir": "./dist/",
@@ -9,8 +8,8 @@
         "jsx": "react",
         "allowJs": true,
         "moduleResolution": "node",
-        "allowSyntheticDefaultImports" : true,
-        "esModuleInterop" : true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
         "resolveJsonModule": true
     },
     "include": ["**/*.ts", "**/*.tsx"],

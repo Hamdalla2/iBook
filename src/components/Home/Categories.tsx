@@ -1,3 +1,6 @@
+//  styles
+import "../../styles/Categories.scss";
+
 // libraries
 import React, { useEffect, useState } from "react";
 
@@ -6,12 +9,10 @@ function Categories() {
   const [list, setList] = useState<any>({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/categorieslist`)
+    fetch(`https://api.jsonbin.io/b/62641d1e25069545a327e403`)
       .then(response => response.json())
-      .then(data => setList(data[0]))
+      .then(data => setList(data));
   }, [])
-
-  const { categories } = list;
 
   return (
     <section className="categories" id="categories">
@@ -21,7 +22,7 @@ function Categories() {
       </p>
 
       <fieldset className="categories-grid">
-        {categories?.map((category, i: number) =>
+        {list?.categories?.map((category:any, i: number) =>
           <article className="category-item" key={i}>
             <a href={`#carouselContainer${category.href}`}>
               <img className="category-image" src={category.image} alt={`category${category.id}`} />

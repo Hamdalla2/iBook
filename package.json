@@ -1,32 +1,23 @@
 {
   "name": "ibook",
-  "version": "0.2.0",
-  "private": true,
+  "version": "1.1.0",
   "dependencies": {
-    "@testing-library/jest-dom": "*",
-    "@testing-library/react": "*",
-    "@testing-library/user-event": "*",
-    "cookie-parser": "*",
-    "cors": "*",
-    "cra-template-typescript": "*",
-    "express": "*",
-    "lodash": "*",
-    "mongoose": "*",
-    "nodemon": "*",
-    "path": "*",
-    "react": "*",
-    "react-dom": "*",
-    "react-router-dom": "*",
-    "react-scripts": "*",
-    "sass": "*",
-    "web-vitals": "*"
+    "@types/react": "^18.0.6",
+    "@types/react-slick": "^0.23.8",
+    "cra-template-typescript": "^1.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-slick": "^0.29.0",
+    "sass": "^1.50.1",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "react-scripts test",
-    "server": "nodemon server/server.js"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
@@ -45,8 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/lodash.debounce": "*"
   }
 }
